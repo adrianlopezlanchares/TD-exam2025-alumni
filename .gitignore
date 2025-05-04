@@ -8,3 +8,4 @@ terraform.tfstate
 terraform.tfstate.backup
 .terraform.lock.hcl
 prueba-examen-final-8b32c2e6ae3c.json
+.DS_Store
