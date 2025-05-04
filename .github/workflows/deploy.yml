@@ -35,6 +35,10 @@ jobs:
     - name: Replace bucket name in manifest
       run: |
         sed "s/REPLACE_BUCKET_NAME/${{ secrets.GCP_BUCKET_NAME }}/g" k8s/deployment.yaml > k8s/deployment.generated.yaml
+    - name: Debug print
+      run: |
+        echo "GKE_CLUSTER=${GKE_CLUSTER}"
+        echo "GKE_ZONE=${GKE_ZONE}"
     - name: Deploy to GKE
       run: |
         gcloud container clusters get-credentials $GKE_CLUSTER --zone $GKE_ZONE
