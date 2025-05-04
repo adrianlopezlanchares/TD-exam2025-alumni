@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("/Users/adrian/Documents/ICAI/4o/2o Cuatri/Digitalizacion/ExamenFinal/TD-exam2025-alumni/examen-final-458209-9541dc93d902.json")
+  credentials = file("/Users/adrian/Documents/ICAI/4o/2o Cuatri/Digitalizacion/ExamenFinal/TD-exam2025-alumni/prueba-examen-final-8b32c2e6ae3c.json")
 
   project = var.gcp-project
   region  = var.gcp-region

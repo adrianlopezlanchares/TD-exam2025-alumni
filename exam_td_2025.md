@@ -11,7 +11,7 @@
 - C) La facturación se realiza a nivel de proyecto
 - D) La activación de API's en Google Cloud se realiza por cada proyecto
 
-**Solución: D** 
+**Solución: C, D** 
 
 
 ## **2. Virtual Private Clouds (VPC)**
@@ -46,7 +46,7 @@
 - C) AutoML automáticamente busca los mejores modelos y ajusta los hiperparámetros
 - D) AutoML utiliza transfer learning
 
-**Solución: B, C**
+**Solución: B, C, D**
 
 ## **6. Contenedores**
 - A) La imagen Docker de un contenedor contiene tanto la aplicación como el kernel del sistema operativo
@@ -54,7 +54,7 @@
 - C) Un contenedor esta formado por capas. Las capas que provienen de la imagen son de solo lectura y sobre ellas se añade una capa que permite tambien escritura.
 - D) Un Dockerfile es un fichero de texto que contiene instrucciones para indicar a Docker como construir una imagen
 
-**Solución: D**
+**Solución: C, D**
 
 ## **7. Arquitectura Kubernetes**
 - A) El kube-proxy es el elemento responsable de asignar Pods a los Nodos
@@ -70,7 +70,7 @@
 - C) El recurso Service de tipo LoadBalancer me permite realizar enrutamiento en base a URL
 - D) En kubernetes la comunicación entre Pods que residen en diferentes nodos se realiza a traves de NATs ya que los Pods adquieren direcciones privadas
 
-**Solución: B, D**
+**Solución: A**
 
 ## **9. Pods**
 - A) Por defecto, todos los contenedores de un Pod comparten la misma dirección IP
@@ -78,7 +78,7 @@
 - C) Cuando un contenedor dentro de un Pod finaliza su ejecución, Kubernetes lo reinicia automáticamente
 - D) La propiedad resources.requests.cpu de un contendor dentro de un Pod indica la maxima cantidad de CPU que el contenedor puede utilizar
 
-**Solución: A, B**
+**Solución: A**
 
 ## **10. Volúmenes**
 - A) Si un Pod es re-asignado a un nodo diferente, los datos guardados en un volumen de tipo emptyDir siguen estando accesibles
@@ -94,7 +94,7 @@
 - C) Para desplegar microservicios que implementan servidores de base de datos, la aproximación recomendada es utilizar StatefulSet
 - D) El recurso Deployment es ideal para microservicios que requieren almacenamiento persistente
 
-**Solución: B** 
+**Solución: C** 
 
 
 ## **12. ¿Qué comandos de Terraform usarías para inicializar un proyecto y validar la sintaxis de los ficheros?**
@@ -104,7 +104,7 @@
 - D) `terraform apply --dry-run`  
 
 
-**Solución A**: 
+**Solución A, C**: 
 
 ## **13. ¿Cuál de los siguientes comandos añade un origen remoto en Git?**
 - A) `git fetch origin`  
@@ -130,7 +130,7 @@
 - D) Lanza un servicio en Cloud Run en la región indicada
 
 
-**Solución D**: 
+**Solución B, D**: 
 
 
 ## **15. ¿Qué comandos de GitHub Actions podrías usar para acceder a los secretos definidos en el repositorio?**
@@ -173,7 +173,7 @@ on:
 - D) `--function-name`  
 
 
-**Solución B**:
+**Solución B, C**:
 
 
 ## **19. ¿Qué comandos de Terraform  de los listados a continuación se usaron durante la práctica para crear y destruir el clúster GKE?**

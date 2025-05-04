@@ -1,7 +1,7 @@
 
 variable "gcp-project" {
   description = "GCP project"
-  default     = "examen-final"
+  default     = "prueba-examen-final"
 }
 
 variable "gcp-network" {
@@ -33,10 +33,10 @@ variable "gcp-node-count" {
 variable "gcp-node-size" {
   description = "K8s Worker nodes"
   type        = string
-  default     = "e2.small"
+  default     = "e2-small"
 }
 variable "gcp-bucket-name" {
   description = "Bucket Name"
   type        = string
-  default     = "adrianlopezlanchares-bucket"
+  default     = "adrianlopezlanchares-bucket-examen-final"
 }

@@ -1,6 +1,6 @@
 resource "google_container_cluster" "primary" {
   name     = var.gcp-cluster-name
-  location = var.gcp-region
+  location = var.gcp-zone
 
   remove_default_node_pool = true
   initial_node_count       = 1
@@ -13,7 +13,7 @@ resource "google_container_cluster" "primary" {
 resource "google_container_node_pool" "primary_nodes" {
   name       = "${var.gcp-cluster-name}-node-pool"
   cluster    = google_container_cluster.primary.name
-  location   = var.gcp-region
+  location   = var.gcp-zone
   node_count = var.gcp-node-count
 
   node_config {
